@@ -168,9 +168,11 @@ def ClockIn(user_data,messenger):
 
 
 if __name__ == '__main__':
-    messenger = Messenger(sc_key=sckey)
+    print(users_data)
+    print(sckey)
+    # messenger = Messenger(sc_key=sckey)
 
-    for user_data in users_data:
-        ClockIn(user_data,messenger)
-        time.sleep(2)
+    # for user_data in users_data:
+    #     ClockIn(user_data,messenger)
+    #     time.sleep(2)
 
