@@ -160,20 +160,12 @@ def ClockIn(user_data,messenger):
         messenger.send(text = '打卡失败,请手动打卡啊')
         ClockIn(user_data,messenger)
 
-
-
-
-
-
-
-
 if __name__ == '__main__':
     print(users_data)
     print(sckey)
     messenger = Messenger(sc_key=sckey)
-    messenger.send(text='打卡失败,请手动打卡啊')
 
-    # for user_data in users_data:
-    #     ClockIn(user_data,messenger)
-    #     time.sleep(2)
+    for user_data in eval(users_data):
+        ClockIn(user_data,messenger)
+        time.sleep(2)
 
