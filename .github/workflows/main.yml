@@ -38,4 +38,4 @@ jobs:
         users_data: ${{ secrets.users_data }}
         sckey: ${{ secrets.sckey }}
       run:
-        python main.py $users_data $sckey
+        python main2.py $users_data $sckey
