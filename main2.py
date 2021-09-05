@@ -94,12 +94,20 @@ def ClockIn(user_data,messenger):
         else:
             if user_data['usr'][0] == 'S':
                 data2 = {
+                    # "BackState": 1,
+                    # "MorningTemp": "36.5",
+                    # "NightTemp": "36.5",
+                    # "RealAddress": "芙蓉国际",
+                    # "RealCity": "常德市",
+                    # "RealCounty": "武陵区",
+                    # "RealProvince": "湖南省",
+                    # "tripinfolist": []
                     "BackState": 1,
                     "MorningTemp": "36.5",
                     "NightTemp": "36.5",
-                    "RealAddress": "芙蓉国际",
-                    "RealCity": "常德市",
-                    "RealCounty": "武陵区",
+                    "RealAddress": "湖南大学",
+                    "RealCity": "长沙市",
+                    "RealCounty": "岳麓区",
                     "RealProvince": "湖南省",
                     "tripinfolist": []
                 }
