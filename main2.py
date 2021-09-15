@@ -109,6 +109,7 @@ def ClockIn(user_data,messenger):
                     "RealCity": "长沙市",
                     "RealCounty": "岳麓区",
                     "RealProvince": "湖南省",
+                    "QRCodeColor": "绿色",
                     "tripinfolist": []
                 }
             else:
