@@ -131,7 +131,7 @@ def ClockIn(user_data,messenger):
             messenger.send(text= user_data['usr'] + msg )
     except:
         print("Error")
-        messenger.send(text = '打卡失败,请手动打卡啊')
+        messenger.send(text = '打卡失败,请手动打卡!')
         ClockIn(user_data,messenger)
 
 if __name__ == '__main__':
