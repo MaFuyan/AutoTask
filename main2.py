@@ -112,6 +112,7 @@ def ClockIn(user_data,messenger):
                     "QRCodeColor": "绿色",
                     "tripinfolist": []
                 }
+
             else:
                 data2 = {
                     "BackState": 1,
