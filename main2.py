@@ -116,6 +116,9 @@ def ClockIn(user_data,messenger):
             else:
                 data2 = {
                     "BackState": 1,
+                "IsInCampus":1,
+                "IsNormalTemperature":1,
+                "IsUnusual":0,
                     "MorningTemp": "36.5",
                     "NightTemp": "36.5",
                     "RealAddress": "湖南大学",
