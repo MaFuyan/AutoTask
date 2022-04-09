@@ -14,7 +14,7 @@ def get_status(usr_info):
     time.sleep(wait_delay)
     b.visit('https://mc.manuscriptcentral.com/tip-ieee/')
     time.sleep(wait_delay)
-    print(usr_info[0])
+    # print(usr_info[0])
     b.fill('USERID', usr_info[0])
     time.sleep(wait_delay)
     b.fill('PASSWORD',usr_info[1])
@@ -42,5 +42,5 @@ def print_log(usr_info):
     print(usr_info[0])
 
 if __name__ == '__main__':
-    # print(get_status(usr_info))
-    print_log(eval(usr_info))
+    print(get_status(usr_info))
+    # print_log(eval(usr_info))
