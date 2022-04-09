@@ -6,6 +6,8 @@ from messenger import Messenger
 
 wait_delay = 1
 
+users_data = os.getenv("users_data")
+sckey = os.getenv("sckey")
 users_data = os.getenv("usr_info")
 
 def get_status(usr_info):
