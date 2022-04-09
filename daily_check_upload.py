@@ -8,6 +8,8 @@ wait_delay = 1
 
 
 usr_info = os.getenv("usr_info")
+sckey = os.getenv("sckey")
+
 
 def get_status(usr_info):
     b = Browser('chrome', headless=True, executable_path='chromedriver')
@@ -42,5 +44,8 @@ def print_log(usr_info):
     print(usr_info[0])
 
 if __name__ == '__main__':
-    print(get_status(usr_info))
+    messenger = Messenger(sc_key=sckey)
+    messenger.send(text='你提交论文的状态为：' + get_status(eval(usr_info)))
+
+
     # print_log(eval(usr_info))
