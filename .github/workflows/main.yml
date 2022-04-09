@@ -33,9 +33,16 @@ jobs:
     - name: Install requests #安装requests
       run: |
         pip install requests
+    - name: Install beautifulsoup4  #安装requests
+      run: |
+        pip install Beautifulsoup4
+    - name: Install splinter #安装requests
+      run: |
+        pip install splinter
     - name: clockin #打卡
       env:
         users_data: ${{ secrets.users_data }}
         sckey: ${{ secrets.sckey }}
+        usr_info: ${{ secrets.usr_info }}
       run:
-        python main2.py $users_data $sckey
+        python daily_check_upload.py $users_data $sckey $usr_info
