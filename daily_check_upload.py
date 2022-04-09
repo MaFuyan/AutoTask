@@ -38,5 +38,9 @@ def get_status(usr_info):
     b.quit()
     return current_manuscript_status
 
+def print_log(usr_info):
+    print(usr_info[0])
+
 if __name__ == '__main__':
-    print(get_status(usr_info))
+    # print(get_status(usr_info))
+    print_log(usr_info)
