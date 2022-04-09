@@ -20,7 +20,8 @@ def get_status(usr_info):
     time.sleep(wait_delay)
     b.click_link_by_id('logInButton')
     time.sleep(wait_delay)
-    b.click_link_by_partial_href("AUTHOR")
+    # b.click_link_by_partial_href("AUTHOR")
+    b.links.find_by_partial_href("AUTHOR")
     time.sleep(wait_delay)
     html_obj = b.html
     soup = BeautifulSoup(html_obj,"lxml")
