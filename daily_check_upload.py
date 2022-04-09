@@ -43,4 +43,4 @@ def print_log(usr_info):
 
 if __name__ == '__main__':
     # print(get_status(usr_info))
-    print_log(usr_info)
+    print_log(eval(usr_info))
