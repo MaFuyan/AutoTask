@@ -42,6 +42,9 @@ jobs:
     - name: Install selenium #安装requests
       run: |
         pip install selenium
+      - name: Install lxml #安装requests
+        run: |
+          pip install lxml
     - name: clockin #打卡
       env:
         users_data: ${{ secrets.users_data }}
