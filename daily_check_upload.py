@@ -9,7 +9,7 @@ wait_delay = 1
 users_data = os.getenv("usr_info")
 
 def get_status(usr_info):
-    b = Browser('chrome', headless=True, executable_path='/home/hnu/Documents/tools/learning-power/Driver/chromedriver')
+    b = Browser('chrome', headless=True, executable_path='chromedriver')
     time.sleep(wait_delay)
     b.visit('https://mc.manuscriptcentral.com/tip-ieee/')
     time.sleep(wait_delay)
