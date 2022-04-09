@@ -14,6 +14,7 @@ def get_status(usr_info):
     time.sleep(wait_delay)
     b.visit('https://mc.manuscriptcentral.com/tip-ieee/')
     time.sleep(wait_delay)
+    print(usr_info[0])
     b.fill('USERID', usr_info[0])
     time.sleep(wait_delay)
     b.fill('PASSWORD',usr_info[1])
