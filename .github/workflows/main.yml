@@ -38,7 +38,7 @@ jobs:
         pip install Beautifulsoup4
     - name: Install splinter #安装requests
       run: |
-        pip install splinter
+        pip install splinter==0.17.0
     - name: Install selenium #安装requests
       run: |
         pip install selenium
