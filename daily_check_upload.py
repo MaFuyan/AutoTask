@@ -6,9 +6,8 @@ from messenger import Messenger
 
 wait_delay = 1
 
-users_data = os.getenv("users_data")
-sckey = os.getenv("sckey")
-users_data = os.getenv("usr_info")
+
+usr_info = os.getenv("usr_info")
 
 def get_status(usr_info):
     b = Browser('chrome', headless=True, executable_path='chromedriver')
@@ -38,4 +37,4 @@ def get_status(usr_info):
     return current_manuscript_status
 
 if __name__ == '__main__':
-    print(get_status(users_data))
+    print(get_status(usr_info))

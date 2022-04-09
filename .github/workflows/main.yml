@@ -48,4 +48,5 @@ jobs:
         sckey: ${{ secrets.sckey }}
         usr_info: ${{ secrets.usr_info }}
       run:
-        python daily_check_upload.py $users_data $sckey $usr_info
+#        python daily_check_upload.py $users_data $sckey $usr_info
+        python daily_check_upload.py $usr_info
