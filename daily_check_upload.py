@@ -33,7 +33,7 @@ def get_status(usr_info):
     # row = table.tbody.findAll('tr')[1]
     # first_column_html = str(row.findAll('td')[1].contents[0])
     # current_manuscript_status = BeautifulSoup(first_column_html,"lxml").text
-    current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[0].text
+    current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[5].text
     # current_manuscript_status = 'demo'
     # print current_status_msg
     time.sleep(wait_delay)
