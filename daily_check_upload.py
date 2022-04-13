@@ -33,19 +33,20 @@ def get_status(usr_info):
     # row = table.tbody.findAll('tr')[1]
     # first_column_html = str(row.findAll('td')[1].contents[0])
     # current_manuscript_status = BeautifulSoup(first_column_html,"lxml").text
+    AE = soup.find(id="queue_0").findAll('td')[0].contents[0].text
     current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[5].text
     # current_manuscript_status = 'demo'
     # print current_status_msg
     time.sleep(wait_delay)
     b.quit()
-    return current_manuscript_status
+    return AE, current_manuscript_status
 
 def print_log(usr_info):
     print(usr_info[0])
 
 if __name__ == '__main__':
     messenger = Messenger(sc_key=sckey)
-    messenger.send(text='你提交论文的状态为：' + get_status(eval(usr_info)))
-
+    AE, status = get_status(eval(usr_info))
+    messenger.send(text='你提交论文的状态为：' + status +' ,分配的副主编是' + AE)
 
     # print_log(eval(usr_info))
