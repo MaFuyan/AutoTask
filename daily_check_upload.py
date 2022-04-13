@@ -47,6 +47,6 @@ def print_log(usr_info):
 if __name__ == '__main__':
     messenger = Messenger(sc_key=sckey)
     AE, status = get_status(eval(usr_info))
-    messenger.send(text='你提交论文的状态为：' + status +' ,分配的副主编是' + AE)
+    messenger.send(text='你提交论文的状态为：' + status +' ,' + AE)
 
     # print_log(eval(usr_info))
