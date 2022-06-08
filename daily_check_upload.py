@@ -47,6 +47,6 @@ def print_log(usr_info):
 if __name__ == '__main__':
     messenger = Messenger(sc_key=sckey)
     AE, status = get_status(eval(usr_info))
-    messenger.send(text='论文状态：' + status +',' + AE)
+    messenger.send(text='论文状态:' + status +',' + AE)
 
     # print_log(eval(usr_info))
