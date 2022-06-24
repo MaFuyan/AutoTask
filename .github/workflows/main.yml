@@ -35,13 +35,13 @@ jobs:
         pip install requests
     - name: Install beautifulsoup4  #安装requests
       run: |
-        pip install Beautifulsoup4
+        pip install Beautifulsoup4==4.9.3
     - name: Install splinter #安装requests
       run: |
         pip install splinter==0.17.0
     - name: Install selenium #安装requests
       run: |
-        pip install selenium
+        pip install selenium==3.141.0
     - name: Install lxml #安装requests
       run: |
         pip install lxml
