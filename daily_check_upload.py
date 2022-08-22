@@ -39,14 +39,15 @@ def get_status(usr_info):
     # print current_status_msg
     time.sleep(wait_delay)
     b.quit()
+
     return AE, current_manuscript_status
 
 def print_log(usr_info):
     print(usr_info[0])
 
 if __name__ == '__main__':
-    messenger = Messenger(sc_key=sckey)
+    # messenger = Messenger(sc_key=sckey)
     AE, status = get_status(eval(usr_info))
-    messenger.send(text='论文状态:' + status +',' + AE)
+    # messenger.send(text='论文状态:' + status +',' + AE)
 
     # print_log(eval(usr_info))
