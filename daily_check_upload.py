@@ -40,7 +40,6 @@ def get_status(usr_info):
     time.sleep(wait_delay)
     b.quit()
 
-
     return AE, current_manuscript_status
 
 def print_log(usr_info):
