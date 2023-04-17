@@ -12,9 +12,10 @@ sckey = os.getenv("sckey")
 
 
 def get_status(usr_info):
-    b = Browser('chrome', headless=True, executable_path='chromedriver')
+    # b = Browser('chrome', headless=True, executable_path='chromedriver')
+    b = Browser('chrome', executable_path='chromedriver')
     time.sleep(wait_delay)
-    b.visit('https://mc.manuscriptcentral.com/tip-ieee/')
+    b.visit('https://mc.manuscriptcentral.com/tmm-ieee/')
     time.sleep(wait_delay)
     # print(usr_info[0])
     b.fill('USERID', usr_info[0])
@@ -34,7 +35,8 @@ def get_status(usr_info):
     # first_column_html = str(row.findAll('td')[1].contents[0])
     # current_manuscript_status = BeautifulSoup(first_column_html,"lxml").text
     AE = soup.find(id="queue_0").findAll('td')[0].contents[0].text
-    current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[5].text
+    current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[5].text #TMM
+    current_manuscript_status = soup.find(id="queue_0").findAll('td')[0].contents[3].text #TAFFC
     # current_manuscript_status = 'demo'
     # print current_status_msg
     time.sleep(wait_delay)
